@@ -1,0 +1,3 @@
+version=0.82
+base_url=http://www.ibiblio.org/pub/Linux/ALPHA/freetds/stable
+archive_format=tar.gz

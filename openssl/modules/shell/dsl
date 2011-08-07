@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+openssl_configure()
+{
+  if (( ${static_flag:-0} == 1 ))
+  then
+    ./config --prefix="${install_path}" zlib > configure.log 2>&1
+  else
+    ./config --prefix="${install_path}" zlib shared > configure.log 2>&1
+  fi
+}

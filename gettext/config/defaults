@@ -1,0 +1,3 @@
+version=0.18.1
+base_url=http://mirrors.kernel.org/gnu/gettext
+archive_format=tar.gz

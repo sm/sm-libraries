@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# freetds_postfetch()
+# {
+#   local _directory=$(
+#     cd "${source_path}"
+#     find . -mindepth 1 -maxdepth 1 -iname "${package_name}-${package_version}*" -type d
+#   )
+#
+#   if variable_is_nonempty _directory
+#   then
+#     if [[ "${_directory}" != "${package_dir}" ]]
+#     then
+#       move_directory "${_directory}" to "${package_dir}"
+#     fi
+#   fi
+# }

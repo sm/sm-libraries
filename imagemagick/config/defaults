@@ -1,0 +1,3 @@
+version=6.6.9-3
+archive_format=tar.bz2
+base_url=ftp://ftp.imagemagick.org/pub

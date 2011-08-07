@@ -1,0 +1,3 @@
+version=1.0.0d
+base_url=http://www.openssl.org/source
+md5_url=http://www.openssl.org/source

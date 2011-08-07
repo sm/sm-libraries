@@ -1,0 +1,4 @@
+version=6.7
+base_url=http://www.complang.org/ragel
+website_url=http://www.complang.org/ragel/
+docs_url=http://www.complang.org/ragel/ragel-guide-6.7.pdf

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+package_definition \
+  file "libiconv-${package_version}.${archive_format}" \
+  dir "libiconv-${package_version}"
