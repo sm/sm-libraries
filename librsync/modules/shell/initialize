@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 package_definition \
-  base_url="http://prdownloads.sourceforge.net/project/librsync/librsync/${package_version}"
-  website_url="http://librsync.sourceforge.net/"
+  base_url "http://prdownloads.sourceforge.net/project/librsync/librsync/${package_version}" \
+  website_url "http://librsync.sourceforge.net/"
 
 configure_flags+=( --disable-debug --disable-dependency-tracking )
 
