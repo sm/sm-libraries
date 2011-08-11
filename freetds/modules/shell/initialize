@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+configure_flags=( --prefix=${install_path} --with-pic )
