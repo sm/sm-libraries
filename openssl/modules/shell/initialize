@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
 
-make_command="make ${make_flags[@]:-"-j$(os_cpu_count)"} || true"
-
