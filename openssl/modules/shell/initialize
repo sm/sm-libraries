@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
 
+configure_flags+=(zlib no-asm)
+
