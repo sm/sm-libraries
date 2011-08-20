@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # package_definition \
 #   name=ghostscript-fonts-std
@@ -7,7 +7,9 @@
 #
 # install_code=mv fonts /usr/local/share/ghostscript
 
-
-package_definition \
-  base_url "http://voxel.dl.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${package_version}"
+ghostscript_initialize()
+{
+  package_definition \
+    base_url "http://voxel.dl.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${package_version}"
+}
 

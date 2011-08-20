@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
+freetds_initialize()
+{
+  configure_flags=( --prefix=${install_path} --with-pic )
+}
 
 # freetds_postfetch()
 # {

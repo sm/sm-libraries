@@ -1,0 +1,19 @@
+#!/bin/sh
+
+jpeg_initialize()
+{
+  package_definition \
+    dir="jpeg-8b" \
+    file="${package_name}.${package_version}.$archive_format" \
+    base_url="http://www.ijg.org/files/${package_name}.${package_version}.$archive_format"
+
+  if file_is_missing /usr/local/bin/libtool && command_exists glibtool ; then
+    link $(which glibtool) to /usr/local/bin/libtool
+  fi
+
+  if os_is_darwin ; then
+    export MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion | awk -F'.' '{print $1"."$2}')
+  fi
+
+  configure_flags=( --enable-shared )
+}

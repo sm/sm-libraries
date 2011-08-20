@@ -1,0 +1,10 @@
+#!/bin/sh
+
+imagemagick_initialize()
+{
+  package_definition \
+    file "ImageMagick-${package_version}.${archive_format}" \
+    dir "ImageMagick-${package_version}"
+
+  package_dependencies=( freetype libpng jpeg tiff libwmf lcms ghostscript)
+}

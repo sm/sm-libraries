@@ -1,0 +1,8 @@
+#!/bin/sh
+
+libevent_initialize()
+{
+  package_definition \
+    file "${package_name}-${package_version}-stable.${archive_format}" \
+    dir "${package_name}-${package_version}-stable"
+}

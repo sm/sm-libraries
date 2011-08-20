@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
+openssl_initialize()
+{
+  configure_flags+=(zlib no-asm)
+}
 
 openssl_configure()
 {
