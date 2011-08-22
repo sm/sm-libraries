@@ -2,7 +2,19 @@
 
 freetds_initialize()
 {
-  configure_flags=( --prefix=${install_path} --with-pic )
+  configure_flags=( --prefix="${install_path}" --with-pic )
+
+  case "${package_version}" in
+    (0.9*)
+      package_definition \
+        base_url "http://ibiblio.org/pub/Linux/ALPHA/freetds/stable/"
+    ;;
+
+    (*)
+      package_definition \
+        base_url "http://ibiblio.org/pub/Linux/ALPHA/freetds/old/${package_version}/"
+    ;;
+  esac
 }
 
 # freetds_postfetch()
