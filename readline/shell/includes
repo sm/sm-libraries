@@ -1,1 +1,16 @@
-ext/package
+#!/bin/sh
+
+readline_initialize()
+{
+  if ! package_is_active ncurses
+  then
+    configure_flags+=( --with-curses )
+    debug package "Enabling 'termcap' support with 'ncurses'."
+  elif ! package_is_active termcap
+  then
+    configure_flags+=( --with-termcap )
+    debug package "Enabling 'termcap' support with 'termcap'."
+  else
+    warn "Termcap support disabled, install 'ncurses' or 'termcap' packages and reinstall 'readline' to enable."
+  fi
+}
