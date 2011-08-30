@@ -2,7 +2,7 @@
 
 librsync_initialize()
 {
-  package_definition \
+  package define \
     base_url "http://prdownloads.sourceforge.net/project/librsync/librsync/${package_version}"
 
   configure_flags+=( --disable-debug --disable-dependency-tracking )

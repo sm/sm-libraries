@@ -2,7 +2,7 @@
 
 jpeg_initialize()
 {
-  package_definition \
+  package define \
     dir="jpeg-8b" \
     file="${package_name}.${package_version}.$archive_format" \
     base_url="http://www.ijg.org/files/${package_name}.${package_version}.$archive_format"
@@ -11,7 +11,7 @@ jpeg_initialize()
     link $(which glibtool) to /usr/local/bin/libtool
   fi
 
-  if os_is_darwin ; then
+  if os is darwin ; then
     export MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion | awk -F'.' '{print $1"."$2}')
   fi
 

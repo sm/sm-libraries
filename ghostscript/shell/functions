@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# package_definition \
+# package define \
 #   name=ghostscript-fonts-std
 #   version=8.11
 #   base_url="http://voxel.dl.sourceforge.net/project/gs-fonts/gs-fonts/8.11%20%28base%2035%2C%20GPL%29"
@@ -9,7 +9,7 @@
 
 ghostscript_initialize()
 {
-  package_definition \
+  package define \
     base_url "http://voxel.dl.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${package_version}"
 }
 

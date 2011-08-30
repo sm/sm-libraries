@@ -2,7 +2,7 @@
 
 imagemagick_initialize()
 {
-  package_definition \
+  package define \
     file "ImageMagick-${package_version}.${archive_format}" \
     dir "ImageMagick-${package_version}"
 
