@@ -1,6 +1,1 @@
 #!/bin/sh
-
-pcre_initialize()
-{
-  configure_flags=( --prefix=${install_path} --enable-utf8 --enable-unicode-properties )
-}
