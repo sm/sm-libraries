@@ -1,6 +1,6 @@
 #!/bin/sh
 
-iconv_initialize()
+iconv_prefetch()
 {
   package define \
     file "libiconv-${package_version}.${archive_format}" \
