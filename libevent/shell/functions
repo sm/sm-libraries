@@ -1,6 +1,6 @@
 #!/bin/sh
 
-libevent_initialize()
+libevent_prefetch()
 {
   package define \
     file "${package_name}-${package_version}-stable.${archive_format}" \
