@@ -1,4 +1,0 @@
-#!/bin/sh
-
-configure_flags+=(zlib no-asm)
-

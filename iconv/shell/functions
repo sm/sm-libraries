@@ -1,9 +1,0 @@
-#!/bin/sh
-
-iconv_initialize()
-{
-  package define \
-    file "libiconv-${package_version}.${archive_format}" \
-    dir "libiconv-${package_version}"
-}
-

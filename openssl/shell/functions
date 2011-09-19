@@ -1,10 +1,5 @@
 #!/bin/sh
 
-openssl_initialize()
-{
-  configure_flags+=(zlib no-asm)
-}
-
 openssl_configure()
 {
   if (( ${static_flag:-0} == 1 ))
