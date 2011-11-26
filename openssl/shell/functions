@@ -9,11 +9,11 @@ openssl_preconfigure()
   else configure_command="./config"
   fi
 
-  __sm.package.configure.flag "--prefix" "${install_path}"
-
   if (( ${static_flag:-0} == 0 ))
-  then configure_flags+=( shared )
+  then __sm.package.configure.flags shared
   fi
 
-  configure_command+="${configure_flags[@]}"
+  __sm.package.configure.flag "--prefix" "${install_path}"
+
+  configure_command+=" ${configure_flags[@]}"
 }
