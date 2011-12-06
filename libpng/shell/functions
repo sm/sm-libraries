@@ -1,8 +1,0 @@
-#!/bin/sh
-
-libpng_initialize()
-{
-  package define \
-    base_url="http://surfnet.dl.sourceforge.net/project/libpng/00-libpng-stable/$version"
-}
-
