@@ -1,0 +1,10 @@
+#!/bin/sh
+
+libffi_preconfigure()
+{
+  if __sm.os.type.is darwin
+  then
+    export HOST
+    HOST="$( ./config.guess )"
+  fi
+}

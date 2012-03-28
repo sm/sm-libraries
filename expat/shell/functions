@@ -1,0 +1,6 @@
+#!/bin/sh
+
+expat_prefetch()
+{
+  package define base_url "http://sourceforge.net/projects/expat/files/expat/${package_version}"
+}

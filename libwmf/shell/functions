@@ -1,8 +1,0 @@
-#!/bin/sh
-
-libwmf_initialize()
-{
-  package define \
-    base_url="http://voxel.dl.sourceforge.net/project/wvware/${package_name}/${package_version}"
-}
-
