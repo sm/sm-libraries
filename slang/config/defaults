@@ -1,0 +1,4 @@
+version=2.2.4
+base_url=ftp://space.mit.edu/pub/davis/slang/v2.2/
+package_dependencies=pcre libpng zlib onig
+#configure_flags=--without-onig
