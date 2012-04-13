@@ -1,1 +1,6 @@
 #!/bin/sh
+
+pcre_preconfigure()
+{
+  aclocal
+}

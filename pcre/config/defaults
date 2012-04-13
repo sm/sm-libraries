@@ -1,3 +1,3 @@
-version=8.12
+version=8.30
 base_url=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
 configure_flags=--enable-utf8 --enable-unicode-properties
