@@ -9,5 +9,5 @@ libyaml_prefetch()
 
 libyaml_preconfigure()
 {
-  os is darwin || autoreconf
+  os is darwin || autoreconf -is --force
 }
