@@ -9,5 +9,6 @@ libyaml_prefetch()
 
 libyaml_preconfigure()
 {
-  os is darwin || autoreconf -is --force
+  os is darwin || autoreconf -is --force > autoreconf.log 2>&1 ||
+    __sm.package.error "Autoreconf of ${package_name} ${package_version} failed! " "$PWD/autoreconf.log"
 }
