@@ -3,9 +3,10 @@
 openssl_preconfigure()
 {
   typeset -gx configure_command
+
   if os is darwin && os arch type is x86_64
-  then configure_command="./Configure darwin64-x86_64-cc"
-  else configure_command="./config"
+  then configure_command="./Configure darwin64-x86_64-cc $LDFLAGS"
+  else configure_command="./config $LDFLAGS"
   fi
 
   if (( ${static_flag:-0} == 0 ))
