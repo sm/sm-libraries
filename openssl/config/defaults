@@ -1,4 +1,4 @@
-version=1.0.1c
+version=1.0.1e
 base_url=http://www.openssl.org/source
 md5_url=http://www.openssl.org/source
 configure_flags=zlib no-asm
