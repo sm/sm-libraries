@@ -1,5 +1,5 @@
-version=8.33
-base_url=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre
+version=8.3.3
+base_url=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
 archive_format=tar.bz2
 configure_flags=--enable-utf8 --enable-unicode-properties
 configure_flag_static=--disable-shared
