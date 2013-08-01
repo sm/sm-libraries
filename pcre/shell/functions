@@ -2,5 +2,7 @@
 
 pcre_preconfigure()
 {
-  aclocal
+    if ! file exists "aclocal.m4"
+    then aclocal
+    fi
 }

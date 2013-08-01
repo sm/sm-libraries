@@ -1,0 +1,8 @@
+#!/bin/sh
+
+config read file "defaults" key "version" from pcre prefix package
+config read file "defaults" key "base_url" from pcre prefix package
+config read file "defaults" key "archive_format" from pcre
+
+package_base_url="${package_base_url}/${package_version}"
+
