@@ -22,7 +22,7 @@ openssl_postinstall()
     # This looks like openssl bug - it requires -lz when linking static
     # but it is not available in the default ... not sure what to do with it
     typeset __pc_file="${install_path}/lib/pkgconfig/openssl.pc"
-    __sm.files.contain 'Libs:.*-lz' "${__pc_file}" ||
+    __sm.files.contain 'Libs:.*-lz' '' "${__pc_file}" ||
     {
       sed -e '/^Libs:/ s/Libs:/Libs: -lz/' < "${__pc_file}" > "${__pc_file}.replaced" &&
       mv "${__pc_file}.replaced" "${__pc_file}" ||
