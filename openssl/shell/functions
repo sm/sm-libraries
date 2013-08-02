@@ -17,7 +17,7 @@ openssl_preconfigure()
 openssl_postinstall()
 {
   if
-    (( ${static_flag:-0} == 0 ))
+    (( ${static_flag:-0} == 1 ))
   then
     # This looks like openssl bug - it requires -lz when linking static
     # but it is not available in the default ... not sure what to do with it
