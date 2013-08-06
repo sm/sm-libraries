@@ -13,8 +13,12 @@ openssl_preconfigure()
   then __sm.package.configure.flags shared
   fi
 
-  if (( ${static_flag:-0} == 1 ))
-  then __sm.package.configure.flags --openssldir=/etc/openssl
+  if
+    (( ${static_flag:-0} == 1 ))
+  then
+    __sm.package.configure.flags --openssldir=/etc/openssl
+    [[ -d /etc/openssl ]] || mkdir -p /etc/openssl ||
+      __sm.package.error "Can not create /etc/openssl - make sure it is writable for current user"
   fi
 }
 
