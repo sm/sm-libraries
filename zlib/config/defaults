@@ -1,2 +1,3 @@
-version=1.2.7
+version=1.2.8
 base_url=http://prdownloads.sourceforge.net/libpng
+configure_flag_static=--static
