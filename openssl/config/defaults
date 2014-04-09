@@ -1,4 +1,4 @@
-version=1.0.1f
+version=1.0.1g
 base_url=http://www.openssl.org/source
 md5_url=http://www.openssl.org/source
 configure_flags=zlib
